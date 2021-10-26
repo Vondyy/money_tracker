@@ -5,6 +5,7 @@ print("Your balance is ", balance)
 def deposit():
     deposit = int(input("Enter amount to be deposited: "))
     new_balance = balance + deposit
-    print("Amount left in your account: USD" + str(new_balance))
+    print("Aasdsadasdmount left in your account: USD" + str(new_balance))
     return (new_balance)
 balance = deposit()
+##aasdfsdfsdnm
