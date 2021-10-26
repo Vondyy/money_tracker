@@ -1,6 +1,6 @@
-print("This is where you can keep count of your money")
-balance = 0
-print("Your balance is ", balance)
+with open('balance.txt') as f:
+    contents = f.read()
+    print("Your balance is:", contents)
 
 def deposit():
     deposit = int(input("Enter amount to be deposited: "))
