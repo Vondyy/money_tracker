@@ -8,6 +8,15 @@ if john == "a":
     balance = var + bob
     print("New balance is :", balance)
 with open(r"balance.txt", "w") as f: #open in write mode
+    balance = var + bob
+    f.write(balance)
+with open(r"balance.txt") as f:
+    balance = f.read()
+    print("new balance", balance)
+if john == "b":
+    balance = var - bob
+    print("New balance is :", balance)
+with open(r"balance.txt", "w") as f: #open in write mode
     f.write(balance)
 with open(r"balance.txt") as f:
     balance = f.read()
